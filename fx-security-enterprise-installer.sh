@@ -32,7 +32,7 @@ read -p "Enter an email address for admin access" EMAIL
 
 echo "## PULLING LATEST BUILD APISecuriti IMAGES ##"
 #3.	Pull fx-security-enterprise docker images (based on the tag input)
-docker pull apisecuriti/control-plane:2020-06-21
+docker pull apisecuriti/control-plane:2020-06-22
 docker pull apisecuriti/vc-git-skill-bot:2020-06-07-1826
 docker pull apisecuriti/issue-tracker-fx-skill-bot:2020-06-07-1838
 
