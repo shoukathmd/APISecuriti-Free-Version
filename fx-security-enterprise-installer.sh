@@ -11,6 +11,8 @@
 # 6.	haproxy.cfg
 # 7.	fx-security-enterprise-installer.sh
 
+read -p "Enter an email address for admin access: " EMAIL
+
 echo "## INSTALLING DOCKER ##"
 #1.	Install docker (latest)
 sudo apt update
@@ -28,7 +30,6 @@ echo "## ACTIVATING DOCKER-SWARM MODE ##"
 #2.	Activate docker-swarm mode
 sudo docker swarm init
 
-read -p "Enter an email address for admin access" EMAIL
 
 echo "## PULLING LATEST BUILD APISecuriti IMAGES ##"
 #3.	Pull fx-security-enterprise docker images (based on the tag input)
