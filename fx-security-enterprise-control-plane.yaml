@@ -3,7 +3,7 @@ version: '3.5'
 # volumes
 services:
   fx-control-plane:
-    image: "apisecuriti/control-plane:2020-06-22"
+    image: "apisecuriti/control-plane:latest"
     #autodestroy: ALWAYS
     #autorestart: ON_FAILURE
     #autoredeploy: true
