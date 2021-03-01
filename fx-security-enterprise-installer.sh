@@ -31,12 +31,20 @@ echo "## ACTIVATING DOCKER-SWARM MODE ##"
 sudo docker swarm init
 
 
+
+read -p "Enter image tag: " tag
+echo "tag hint : better to pull 'latest' image"
 echo "## PULLING LATEST BUILD APISecuriti IMAGES ##"
 #3.	Pull fx-security-enterprise docker images (based on the tag input)
-docker pull apisecuriti/control-plane:2020-06-22
-docker pull apisecuriti/vc-git-skill-bot:2020-06-07-1826
-docker pull apisecuriti/issue-tracker-fx-skill-bot:2020-06-07-1838
-
+docker pull apisecuriti/control-plane:"$tag"
+docker pull apisecuriti/vc-git-skill-bot:"$tag"
+docker pull apisecuriti/bot:"$tag"
+docker pull apisecuriti/notification-email-skill-bot:"$tag"
+docker pull apisecuriti/issue-tracker-github-skill-bot:"$tag"
+docker pull apisecuriti/issue-tracker-jira-skill-bot:"$tag"
+docker pull apisecuriti/issue-tracker-fx-skill-bot:"$tag"
+docker pull apisecuriti/cloud-aws-skill-bot:"$tag"
+docker pull apisecuriti/notification-slack-skill-bot:"$tag"
 
 
 
