@@ -33,14 +33,14 @@ echo "tag hint: better to pull from 'latest' tag"
 read -p "Enter image tag: " tag
 echo "## PULLING LATEST BUILD APISecuriti IMAGES ##"
 #3.	Pull fx-security-enterprise docker images (based on the tag input)
-docker pull fxlabs/control-plane:"$tag"
-docker pull fxlabs/vc-git-skill-bot:"$tag"
-docker pull fxlabs/notification-email-skill-bot:"$tag"
-docker pull fxlabs/issue-tracker-github-skill-bot:"$tag"
-docker pull fxlabs/issue-tracker-jira-skill-bot:"$tag"
-docker pull fxlabs/issue-tracker-fx-skill-bot:"$tag"
-docker pull fxlabs/cloud-aws-skill-bot:"$tag"
-docker pull fxlabs/notification-slack-skill-bot:"$tag"
+docker pull apisecuriti/control-plane:"$tag"
+docker pull apisecuriti/vc-git-skill-bot:"$tag"
+docker pull apisecuriti/notification-email-skill-bot:"$tag"
+docker pull apisecuriti/issue-tracker-github-skill-bot:"$tag"
+docker pull apisecuriti/issue-tracker-jira-skill-bot:"$tag"
+docker pull apisecuriti/issue-tracker-fx-skill-bot:"$tag"
+docker pull apisecuriti/cloud-aws-skill-bot:"$tag"
+docker pull apisecuriti/notification-slack-skill-bot:"$tag"
 
 
 
